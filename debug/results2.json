@@ -1,0 +1,8 @@
+{
+    "dataset_name": "winogrande",
+    "dataset_config_name": "winogrande_xl",
+    "template_name": "Replace",
+    "evaluation": {
+        "accuracy": 0.5248618784530387
+    }
+}
