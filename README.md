@@ -23,7 +23,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 other needed package in the requirements.txt
 
-3. reproduce the evaluation -- run_eval.py
+3. reproduce the evaluation -- t-zero/evaluation/run_eval.py
 
 example usage:
 ```bash
@@ -35,7 +35,12 @@ python run_eval.py \
     --output_dir ./debug
 ```
 
-4. reproduce the inference -- inference.py
+4. reproduce the inference -- finetune.py
 ```bash
-python inference.py
+python finetune.py
 ```
+the training process may takes 6-8, as my GPU is Nvidia RTX 4050
+t5_small - 60 million
+t0_3B - 3 billion
+t0, t0pp - 11 billion
+
