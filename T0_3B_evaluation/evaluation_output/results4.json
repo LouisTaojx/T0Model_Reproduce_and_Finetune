@@ -1,0 +1,8 @@
+{
+    "dataset_name": "super_glue",
+    "dataset_config_name": "wsc.fixed",
+    "template_name": "does p stand for",
+    "evaluation": {
+        "accuracy": 0.6730769230769231
+    }
+}

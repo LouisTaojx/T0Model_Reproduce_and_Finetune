@@ -1,0 +1,8 @@
+{
+    "dataset_name": "super_glue",
+    "dataset_config_name": "copa",
+    "template_name": "best_option",
+    "evaluation": {
+        "accuracy": 0.7
+    }
+}
