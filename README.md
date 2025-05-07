@@ -97,7 +97,10 @@ I also tested alternative platforms (Kaggle, Gradient by Paperspace) but found t
 
 
 Memo: Model parameters
+
 t5_small - 60 million,
+
 t0_3B - 3 billion,
+
 t0, t0pp - 11 billion
 

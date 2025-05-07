@@ -1,4 +1,7 @@
 # train_model.py
+# output:
+# https://colab.research.google.com/drive/1A5G05vkQabusexp-FKnlqxSiKiL7S7gr#scrollTo=F18OOTWmomU6
+
 from datasets import Dataset, concatenate_datasets
 from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments, DataCollatorForSeq2Seq
 from sklearn.metrics import accuracy_score

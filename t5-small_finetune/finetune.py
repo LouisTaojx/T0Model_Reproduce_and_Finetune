@@ -3,11 +3,15 @@
 # fxt200001
 # CS6320 Natural Language Processing
 ###########################################
-# this script is the original code for finetuning T5 on multiple datasets
-# But, as it may burn my laptop, if I run it locally. I decided to run it on some cloud platform with advanced GPUs
-# The problem I encountered is the "promptsource" requires a very old "click" version (= 7.1.2). I failed to run this Script on colab, kaggle, and gradient paperspace.
-# finally, I come up with a solution to seperate the code into two parts: code for generating prompt templates "generate_prompts.py" and code for train the model "train.py".
-# I really enjoy this project as it provides me good examples of BQ in interview.
+# This script is the original code for fine-tuning T5 on multiple datasets.
+# However, running it locally may overheat my laptop, so I decided to use a cloud platform with advanced GPUs.
+# The main issue I encountered was that "promptsource" requires an outdated version of "click" (==7.1.2),
+# which caused failures when trying to run this script on Colab, Kaggle, and Gradient (Paperspace).
+# Eventually, I came up with a solution: separate the code into two parts—
+# one for generating prompt templates ("generate_prompts.py") and another for training the model ("train.py").
+# I really enjoyed this project, as it gave me strong examples to discuss during behavioral interviews.
+# output: 
+# https://colab.research.google.com/drive/1Q2K2KekRB1i92cr8ACfU1-Zhh_iqazI0#scrollTo=GbDqzPgp2HGc
 
 from datasets import load_dataset, concatenate_datasets
 from promptsource.templates import DatasetTemplates
