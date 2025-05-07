@@ -3,19 +3,23 @@ Step 1: Environment Setup
 1. It is recommended to use a virtual environment.
 
 2. installed the required package
+
 *promptsource
+
 promptsource provides access to community-curated prompt templates.
 Install it by following the instructions on the official GitHub repository:https://github.com/bigscience-workshop/promptsource.
 
 ⚠️ Note: If using Python > 3.7, you must manually update the Python version constraint in setup.py.
 
 *t-zero
+
 t-zero is a utility package that simplifies tasks like data preprocessing, evaluation, and training for zero-shot models.
 Installation instructions can be found on its GitHub page:https://github.com/bigscience-workshop/t-zero.
 
 ⚠️ Note: Similar to promptsource, Python > 3.7 users need to modify the version requirement in setup.py.
 
 *Other Dependencies
+
 Additional required packages are listed in requirements.txt. Install them using:
 pip install -r requirements.txt
 
@@ -24,6 +28,7 @@ pip install -r requirements.txt
 Step 2: My Work 
 
 Part 1: Reproducing Inference and Evaluation with T0 Models
+
 The goal of Part 1 is to reproduce the inference and evaluation results using T0 models, which are fine-tuned models from the paper "Multitask Prompted Training Enables Zero-Shot Task Generalization".
 
 3. Reproduce the Evaluation — Folder: T0_3B_evaluation
@@ -50,6 +55,7 @@ Outputs: Example results are included in the subfolder and summarized in the acc
 Note: The evaluation script used in this project is heavily adapted from the original run_eval.py in the t-zero repository.
     
 4. Reproduce the Inference — Folder: T0_3B_inference
+
 Environment: Run locally with an Nvidia RTX 4050 GPU. Execution time: 5–10 minutes.
 
 Setup:
@@ -66,6 +72,7 @@ python inference.py
 
 
 Part 2: Reproducing Fine-Tuning with T5-Small
+
 The goal of Part 2 is to reproduce the fine-tuning procedure described in the T0 paper using multitask learning with multiple prompt templates.
 
 5. Reproduce the Fine-Tuning — Folder: t-small_finetune
