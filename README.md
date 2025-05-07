@@ -32,6 +32,7 @@ Part 1: Reproducing Inference and Evaluation with T0 Models
 The goal of Part 1 is to reproduce the inference and evaluation results using T0 models, which are fine-tuned models from the paper "Multitask Prompted Training Enables Zero-Shot Task Generalization".
 
 3. Reproduce the Evaluation — Folder: T0_3B_evaluation
+
 Environment: Run locally with an Nvidia RTX 4050 GPU. Evaluating two datasets takes approximately 3 hours.
 
 Setup:
